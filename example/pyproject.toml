@@ -1,0 +1,18 @@
+[project]
+name = "example-aws-sso project"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    { name = "Pritam", email = "" },
+]
+dependencies = [
+    "fastapi>=0.111.0",
+    "fastapi-template>=3.3.10",
+    "boto3>=1.34.113",
+]
+requires-python = "==3.12.*"
+readme = "README.md"
+license = { text = "MIT" }
+
+[tool.pdm]
+distribution = false
