@@ -5,6 +5,12 @@ Simple Python library for AWS SSO credential management in local development.
 ## About
 **py-aws-sso** simplifies obtaining short-term credentials for CLI and Boto3 operations when using AWS SSO during local Python development. 
 
+## How To Video Guide
+
+Video detailing the steps of configuring AWS SSO Profile using AWS CLI and using this module is available on [YouTube](https://youtu.be/UEj0RnXg-rA)
+
+[![Simplying AWS SSO Credentials for Python Developers](https://img.youtube.com/vi/UEj0RnXg-rA/0.jpg)](https://youtu.be/UEj0RnXg-rA "Simplying AWS SSO Credentials for Python Developers")
+
 
 ## Motivation
 
@@ -33,14 +39,13 @@ haven't already established an SSO login session, **py-aws-sso** will automatica
 
 ## Prerequisites
 
-This Python 3 module requires a working installation of the [AWS CLI v2](https://docs.aws.amazon.
-com/cli/latest/userguide/install-cliv2.html) and the `boto3` library
+This Python 3 module requires a working installation of the [AWS CLI v2](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html) and the `boto3` library
 
 ## Setting Up
 
-1. **Install and Configure AWS CLI v2**: Follow the official documentation https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-sso.html to install and configure AWS CLI v2 with your SSO profiles.
+1. **Install and Configure AWS CLI v2**: Follow the [official documentation](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-sso.html) to install and configure AWS CLI v2 with your SSO profiles.
 
-2. **Include the Module**: Copy the awssso module to your project, typically placed in the project root directory.
+2. **Include the Module**: Copy the `awssso` module to your project, typically placed in the project root directory.
 3. **Run Your Project**:
    - Create a `local_run.py` file to execute your project using Python. 
    - Import `set_aws_creds` from the `awssso` module. 
@@ -72,3 +77,5 @@ print(response)
 ```
 
 Example [fastapi](https://fastapi.tiangolo.com/) project is included for quick reference
+
+
