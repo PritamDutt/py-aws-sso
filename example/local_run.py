@@ -2,13 +2,12 @@ import logging
 
 import uvicorn
 
-from awssso import set_aws_creds
+import awssso
 from main import app
 
 # Replace these with your own values
 aws_profile = 'test-sso'
-set_aws_creds(profile_name=aws_profile, verbose=True)
-
+awssso.set_aws_creds(profile_name=aws_profile, verbose=True)
 logging.basicConfig(level=logging.DEBUG)
 
 

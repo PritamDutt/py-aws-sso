@@ -126,7 +126,7 @@ def _get_sso_cached_login(profile_name) -> FrozenAuthToken:
     try:
         sso_token = botocore.tokens.SSOTokenProvider(botocore.session.Session(),
                                                      profile_name=profile_name).load_token()
-        auth_token = sso_token.get_frozen_token()
+        auth_token = sso_token.get_frozen_token()  # noqa
     except botocore.exceptions.TokenRetrievalError as e:
         _print_msg(
             f'{e}. Invoking Session Login')

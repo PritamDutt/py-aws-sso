@@ -23,7 +23,8 @@ credentials. This can lead to several challenges, including:
 - **Role-switching complexity**: Switching between different roles or accounts can be inconvenient with long-term 
   credentials.
 
-**py-aws-sso** addresses these challenges by providing a simple solution to obtain temporary AWS credentials during local development. By leveraging temporary credentials, developers can:
+**py-aws-sso** addresses these challenges by providing a simple solution to obtain temporary AWS credentials during 
+local development. By leveraging temporary credentials, developers can:
 
 - **Enhance security**: Mitigate the risks associated with long-term credential leaks.
 - **Simplify credential management**: Eliminate the need to store and manage long-term credentials locally.
@@ -39,13 +40,21 @@ haven't already established an SSO login session, **py-aws-sso** will automatica
 
 ## Prerequisites
 
-This Python 3 module requires a working installation of the [AWS CLI v2](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html) and the `boto3` library
+This Python 3 module requires a working installation of the [AWS CLI v2](https://docs.aws.amazon.
+com/cli/latest/userguide/install-cliv2.html) and the `boto3` library
 
 ## Setting Up
 
-1. **Install and Configure AWS CLI v2**: Follow the [official documentation](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-sso.html) to install and configure AWS CLI v2 with your SSO profiles.
+1. **Install and Configure AWS CLI v2**: Follow the official documentation @ https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-sso.html 
+   to install and configure AWS CLI v2 with your SSO profiles.
 
-2. **Include the Module**: Copy the `awssso` module to your project, typically placed in the project root directory.
+2. **Include py-aws-sso**: Install py-aws-sso.
+> pip install py-aws-sso
+>
+> --or--
+> 
+> pdm add py-aws-sso   
+
 3. **Run Your Project**:
    - Create a `local_run.py` file to execute your project using Python. 
    - Import `set_aws_creds` from the `awssso` module. 
