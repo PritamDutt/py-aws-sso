@@ -1,0 +1,28 @@
+[project]
+name = "py-aws-sso"
+dynamic = ["version"]
+description = "Simple Python library for AWS SSO credential management in local development."
+authors = [
+    {name = "Pritam", email = ""},
+]
+dependencies = [
+    "boto3>=1.34.117",
+]
+requires-python = ">=3.10"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.version]
+source = "file"
+path = "awssso/__init__.py"
+
+[tool.pdm.build]
+includes = ["awssso/", "__init__.py"]
+excludes = ["tests/", "example/"]
