@@ -7,9 +7,11 @@ Simple Python library for AWS SSO credential management in local development.
 
 ## How To Video Guide
 
-Video detailing the steps of configuring AWS SSO Profile using AWS CLI and using this module is available on [YouTube](https://youtu.be/UEj0RnXg-rA)
+Video detailing the steps of configuring [AWS SSO Profile using AWS CLI](https://youtu.be/8NjffR4-ils) and [using 
+py-aws-sso](https://youtu.be/qGH9_6khlqU) module are available on [YouTube](https://www.youtube.com/playlist?list=PLJ6FD2Mwj09jIdLXA6ptN-KG319Hq93GK)
 
-[![Simplying AWS SSO Credentials for Python Developers](https://img.youtube.com/vi/UEj0RnXg-rA/0.jpg)](https://youtu.be/UEj0RnXg-rA "Simplying AWS SSO Credentials for Python Developers")
+[![How to configure AWS CLI so that we can use AWS SSO](https://img.youtube.com/vi/8NjffR4-ils/0.jpg)](https://youtu.be/8NjffR4-ils "How to configure AWS CLI so that we can use AWS SSO.")
+[![py-aws-sso: How to install and use - simplying AWS SSO Credentials for Python Developers](https://img.youtube.com/vi/qGH9_6khlqU/0.jpg)](https://youtu.be/qGH9_6khlqU "py-aws-sso: How to install and use - simplying AWS SSO Credentials for Python Developers")
 
 
 ## Motivation
@@ -46,7 +48,7 @@ com/cli/latest/userguide/install-cliv2.html) and the `boto3` library
 ## Setting Up
 
 1. **Install and Configure AWS CLI v2**: Follow the official documentation @ https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-sso.html 
-   to install and configure AWS CLI v2 with your SSO profiles.
+   to install and configure AWS CLI v2 with your SSO profiles. For quick video guide see: [How to configure AWS CLI so that we can use AWS SSO](https://youtu.be/8NjffR4-ils)
 
 2. **Include py-aws-sso**: Install py-aws-sso.
 > pip install py-aws-sso
